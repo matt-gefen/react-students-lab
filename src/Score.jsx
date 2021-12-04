@@ -1,11 +1,12 @@
 import React from "react";
+import { ListGroup } from "react-bootstrap";
 
 const Score = (props) => {
   return (
-    <div>
-      {props.date}
-      {props.score}
-    </div>
+    <ListGroup.Item>
+      <span><strong>Date: </strong>{props.date}  </span>
+      <span><strong>Score: </strong>{props.score}</span>
+    </ListGroup.Item>
   )
 }
 

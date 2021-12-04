@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import studentsArr from './studentsData';
 import Student from './Student'; 
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const students = studentsArr.map((element, index) => {
   return (

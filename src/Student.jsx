@@ -1,5 +1,6 @@
 import React from "react";
 import Score from "./Score";
+import {Card, ListGroup} from 'react-bootstrap'
 
 
 const Student = (props) => {
@@ -15,11 +16,18 @@ const Student = (props) => {
 
 
   return (
-    <div>
-      {props.name}
-      {/* {props.bio} */}
+    <>
+      <Card style={{width: '18rem'}}>
+      <Card.Body>
+        <Card.Title>{props.name}</Card.Title>
+        <Card.Text>{props.bio}</Card.Text>
+      </Card.Body>
+    <ListGroup variant="flush">
       {scores}
-    </div>
+    </ListGroup>
+    </Card>
+
+    </>
   )
 }
 
